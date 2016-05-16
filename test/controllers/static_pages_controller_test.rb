@@ -1,11 +1,11 @@
 require 'test_helper'
 
 class StaticPagesControllerTest < ActionController::TestCase
-
+	
   test "should get home" do
     get :home
     assert_response :success
-    assert_select "title", "Home | Ruby on Rails Tutorial Sample App"
+    assert_select "title", "Ruby on Rails Tutorial Sample App"
   end
 
   test "should get help" do
@@ -15,9 +15,8 @@ class StaticPagesControllerTest < ActionController::TestCase
   end
 
   test "should get about" do
-  	get :about
-  	assert_response :success
-  	assert_select "title", "About | Ruby on Rails Tutorial Sample App"
+    get :about
+    assert_response :success
+    assert_select "title", "About | Ruby on Rails Tutorial Sample App"
   end
-
 end
